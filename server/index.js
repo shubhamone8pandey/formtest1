@@ -4,12 +4,13 @@ const cors = require('cors');
 const app = express();
 const PORT = process.env.PORT || 3001;
 
-// Middleware to parse JSON bodies
-app.use(express.json());
+// Enable CORS globally
 app.use(cors({
   origin: 'https://formtest1-p7rw.vercel.app'
 }));
 
+// Middleware to parse JSON bodies
+app.use(express.json());
 
 // MongoDB connection string with username, password, and database name
 const uri = "mongodb+srv://shubham18bhu:ReactForm@cluster0.vcdhohp.mongodb.net/reactform";
