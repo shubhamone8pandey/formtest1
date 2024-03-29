@@ -6,7 +6,10 @@ const PORT = process.env.PORT || 3001;
 
 // Middleware to parse JSON bodies
 app.use(express.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://formtest1-p7rw.vercel.app'
+}));
+
 
 // MongoDB connection string with username, password, and database name
 const uri = "mongodb+srv://shubham18bhu:ReactForm@cluster0.vcdhohp.mongodb.net/reactform";
