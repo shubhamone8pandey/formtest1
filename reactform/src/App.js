@@ -8,7 +8,7 @@ const App = () => {
   const handleSubmit = (event) => {
     event.preventDefault()
     // Handle form submission here
-    axios.post('http://localhost:3001/api/users', {
+    axios.post('https://formtest-server.vercel.app/api/users', {
       name,
       email
     })
