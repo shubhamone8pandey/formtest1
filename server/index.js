@@ -39,6 +39,9 @@ const userSchema = new mongoose.Schema({
 
 // Define a Mongoose model
 const User = mongoose.model('test', userSchema);
+app.get('/frt', (req,res) =>{
+res.send("acbdde ddsdees")  
+});
 
 // POST request to insert a name into the database
 app.post('/api/users', async (req, res) => {
