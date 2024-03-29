@@ -12,6 +12,10 @@ app.use(cors({
 // Middleware to parse JSON bodies
 app.use(express.json());
 
+app.get('/', (req, res) => {
+res.send('Hello, world!');
+});
+
 // MongoDB connection string with username, password, and database name
 const uri = "mongodb+srv://shubham18bhu:ReactForm@cluster0.vcdhohp.mongodb.net/reactform";
 
